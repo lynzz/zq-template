@@ -1,0 +1,10 @@
+<footer class="footer">
+			<div class="footer-in">
+				<div class="logo-box"><span class="item item1"><a href="http://www.17173.com" target="_blank" title="17173.com"><img alt="17173.com" src="http://ue.2pcdn.com/a/www/index/2013/images/logo-17173-f.png"></a></span><span class="item item2"><a href="http://www.2p.com" target="_blank" title="2P.com"><img alt="2P.com" src="http://ue.2pcdn.com/a/www/index/2013/images/logo-2p-f.png"></a></span></div>
+				<div class="site-link">
+					<p class="link-box"><a href="#" target="_blank" class="link">About us</a><span class="sep">|</span><a href="#" target="_blank" class="link">Tip us</a><span class="sep">|</span><a href="#" target="_blank" class="link">Podcast</a></p>
+					<p class="copyright">Copyright © 2005-2012 2P.com All Rights reserved.</p>
+				</div>
+				<div class="contact-link"><a href="#" class="img-contact img-contact-t">twitter</a><a href="#" class="img-contact img-contact-f">facebook</a><a href="#" class="img-contact img-contact-g">google+</a><a href="#" class="img-contact img-contact-p">Pinterest</a><a href="#" class="img-contact img-contact-y">youtube</a></div>
+			</div>
+		</footer>
