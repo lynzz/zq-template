@@ -1,0 +1,73 @@
+<div class="topbar-zq">
+    <div class="topbar-in">
+        <!-- explore-box begin -->
+        <div class="explore-box">
+            <a href="#" class="explore-con">Explore<i class="ico2 ico-arrow"></i></a>
+            <ul class="list">
+                <li class="item"><a href="http://www.2p.com" class="link">2P Home</a></li>
+                <li class="item"><a href="http://2p.com/game/index.htm" class="link">Gamehubs</a></li>
+                <li class="item"><a href="#" class="link">News</a></li>
+                <li class="item"><a href="#" class="link">Mobile Games</a></li>
+            </ul>
+            <i class="arrow"></i>
+        </div>
+        <!-- explore-box end -->
+        <div class="top-box clearfix">
+            <a href="http://2p.com" class="top-box-con">2P</a>
+            <!-- top-user-status begin -->
+            <div class="top-user-status">
+                <!-- top-user-out begin -->
+                <div class="top-user-out">
+                    <span class="sep">|</span>
+                    <a href="http://2p.com/user/login.htm" class="link">Sign in</a>
+                    <span class="sep">|</span>
+                    <a href="http://2p.com/user/register.htm" class="link">Sign up</a>
+                    <span class="sep">|</span>
+                </div>
+                <!-- top-user-out end -->
+                <!-- top-user-in begin -->
+                <div class="top-user-in"  style="display:none">
+                    <div class="top-user-fun-box">
+                        <div class="avatar-box">
+                            <a href="#">
+                                <img src="http://ue.2pcdn.com/a/lib/v1/images/defaultFace.jpg" class="avatar" alt="" /></a>
+                        </div>
+                        <div class="top-user-fun">
+                            <a href="#" class="user-name-box">
+                                <strong class="user-name">jenny</strong>
+                                <span class="arrow-box"><b class="arrow"></b></span>
+                            </a>
+                            <div class="top-user-drop-box">
+                                <ul class="top-user-drop">
+                                    <li class="top-user-drop-item"><b class="ico-square"></b>
+                                        <a href="http://2p.com/user/activity.htm?userId="
+                                           class="top-user-drop-con">Public Profile</a></li>
+
+                                    <li class="top-user-drop-item"><b class="ico-square"></b>
+                                        <a href="http://2p.com/user/post.htm?userId="
+                                           class="top-user-drop-con">My Posts</a></li>
+
+                                    <li class="top-user-drop-item"><b class="ico-square"></b>
+                                        <a href="http://2p.com/user/game.htm?userId="
+                                           class="top-user-drop-con">My Games</a></li>
+
+                                    <li class="top-user-drop-item"><b class="ico-square"></b>
+                                        <a href="http://2p.com/user/profile.htm?userId="
+                                           class="top-user-drop-con">Account &amp; Settings</a></li>
+
+                                    <li class="top-user-drop-item"><b class="ico-square"></b>
+                                        <a href="http://2p.com/user/logout.do" class="top-user-drop-con" id="logout">Sign out</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- top-user-in end -->
+            </div>
+            <!-- top-user-status end -->
+
+        </div>
+    </div>
+    <b class="mask"></b>
+</div>

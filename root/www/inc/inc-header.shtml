@@ -1,0 +1,75 @@
+<header class="header-zq">
+    <div class="header-in">
+        <!-- logo-box begin -->
+        <div class="logo-box">
+            <a href="http://www.2p.com" class="logo-2p"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/logo-2p.png" alt="logo-2p" /></a>
+            <!--#if expr="${h1Logo} = 1"-->
+            <h1><a href="#" class="logo-hs"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/logo-hs.png" alt="logo-hs" /></a></h1>
+            <!--#else-->
+            <a href="#" class="logo-hs"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/logo-hs.png" alt="logo-hs" /></a>
+            <!--#endif -->
+        </div>
+        <!-- logo-box end -->
+        <!-- menu-box begin -->
+        <div class="menu-box">
+            <ul class="menu clearfix">
+                <li class="item item1">
+                    <a href="index.html" class="con">HearthStone 2P</a><span class="sep">|</span>
+                </li>
+                <li class="item item2">
+                    <a href="#" class="con">Guides</a><span class="sep">|</span>
+                </li>
+                <li class="item item3">
+                    <a href="#" class="con">Cards</a><span class="sep">|</span
+                        ></li>
+                <li class="item item4">
+                    <a href="deckbuilding.html" class="con">Deck Building</a><span class="sep">|</span>
+                    <div class="nav-drop-box">
+                        <ul class="nav-drop">
+                            <li class="nav-drop-item"><a href="paladin-deck.html" class="nav-drop-con">Paladin Decks</a></li>
+                            <li class="nav-drop-item"><a href="druid-deck.html" class="nav-drop-con">Druid Decks</a></li>
+                            <li class="nav-drop-item"><a href="hunter-deck.html" class="nav-drop-con">Hunter Decks</a></li>
+                            <li class="nav-drop-item"><a href="rogue-deck.html" class="nav-drop-con">Rogue Decks</a></li>
+                            <li class="nav-drop-item"><a href="shaman-deck.html" class="nav-drop-con">Shaman Decks</a></li>
+                            <li class="nav-drop-item"><a href="warrior-deck.html" class="nav-drop-con">Warrior Decks</a></li>
+                            <li class="nav-drop-item"><a href="warlock-deck.html" class="nav-drop-con">Warlock Decks</a></li>
+                            <li class="nav-drop-item"><a href="priest-deck.html" class="nav-drop-con">Priest Decks</a></li>
+                            <li class="nav-drop-item"><a href="mage-deck.html" class="nav-drop-con">Mage Decks</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="item item5">
+                    <a href="news.html" class="con">News</a><span class="sep">|</span>
+                </li>
+                <li class="item item6">
+                    <a href="#" class="con">Fireside Duel</a><span class="sep">|</span>
+                </li>
+                <li class="item item7">
+                    <a href="#" class="con">Gallery</a><span class="sep">|</span>
+                </li>
+                <li class="item item8">
+                    <a href="#" class="con">Live Stream</a><i class="ico ico-new"></i>
+                </li>
+            </ul>
+        </div>
+        <!-- menu-box end -->
+        <!-- message-box begin -->
+        <div class="message-box">
+            <!-- tag-box begin -->
+            <div class="tag-box">
+                <span class="tit">Trending: </span><a href="#" target="_blank" class="link">Skill trees</a><a href="#" target="_blank" class="link">Cards trading</a><a href="#" target="_blank" class="link">Cards trading</a><a href="#" target="_blank" class="link">Fireside duel</a><a href="#" target="_blank" class="link">Hardcore stuff</a>
+            </div>
+            <!-- tag-box end -->
+            <!-- search-box begin -->
+            <div class="search-box">
+                <form class="search-form">
+                    <input type="text" name="keyword" class="search-text" value="" onclick="this.value=''">
+                    <input type="submit" class="search-btn" value="Search">
+                </form>
+            </div>
+
+            <!-- search-box end -->
+        </div>
+        <!-- message-box end -->
+    </div>
+</header>

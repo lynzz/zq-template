@@ -1,0 +1,119 @@
+<div class="sider">
+    <!-- btn-share-story begin -->
+    <a href="#" target="_blank" class="btn-share-story"><i class="ico2 ico-share"></i>Share story with us</a>
+    <!-- btn-share-story end -->
+    <!-- About Hearthstone begin -->
+    <div class="comm-mod mod-about">
+        <div class="mod-hd">
+            <h2 class="tit">About Hearthstone</h2>
+        </div>
+        <div class="mod-bd">
+            <div class="guides-box">
+                <div class="info-box">
+                    <a href="#" target="_blank" class="pic-box"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/3.jpg" alt="" class="logo" /></a>
+                    <div class="score">9.2</div>
+                </div>
+                <div class="play-box">
+                    <a href="#" target="_blank" class="btn-play btn-plan">
+                        <i class="ico ico-plan"></i><span class="num">2650</span>
+                    </a>
+                    <a href="#" target="_blank" class="btn-play btn-playing">
+                        <i class="ico ico-playing"></i><span class="num">265</span>
+                    </a>
+                    <a href="#" target="_blank" class="btn-play btn-planed">
+                        <i class="ico ico-played"></i><span class="num">26</span>
+                    </a>
+                </div>
+                <div class="txt-box">Hearthstone: Heroes of Warcraft, is a free-to-play strategy card game, It will initially be available on the Mac and PC, with an iPad version later. Initial launch will contain 300 cards</div>
+                <div class="link-box">
+                    <a href="#" target="_blank" class="btn-download btn-download-ex3"><i class="ico2 ico-download"></i><span class="tit">Download Hearthstone</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Hearthstone end -->
+    <!-- Recent Guides begin -->
+    <div class="comm-mod mod-guides">
+        <div class="mod-hd">
+            <h2 class="tit">Recent Guides</h2>
+        </div>
+        <div class="mod-bd">
+            <!-- list-guides-sider begin -->
+            <ul class="comm-list comm-list-ex2 list-guides-sider">
+                <li class="item">
+                    <a href="#" target="_blank" class="item-con">
+                        <span class="item-c1"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/2.jpg" alt="" class="avatar" /></span>
+						<span class="item-c2">
+							<span class="txt">Newbie Guide</span>
+							<b class="mask"></b>
+						</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" target="_blank" class="item-con">
+                        <span class="item-c1"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/2.jpg" alt="" class="avatar" /></span>
+						<span class="item-c2">
+							<span class="txt">Newbie Guide</span>
+							<b class="mask"></b>
+						</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" target="_blank" class="item-con">
+                        <span class="item-c1"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/2.jpg" alt="" class="avatar" /></span>
+						<span class="item-c2">
+							<span class="txt">Newbie Guide</span>
+							<b class="mask"></b>
+						</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" target="_blank" class="item-con">
+                        <span class="item-c1"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/2.jpg" alt="" class="avatar" /></span>
+						<span class="item-c2">
+							<span class="txt">Newbie Guide</span>
+							<b class="mask"></b>
+						</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#" target="_blank" class="item-con">
+                        <span class="item-c1"><img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/2.jpg" alt="" class="avatar" /></span>
+						<span class="item-c2">
+							<span class="txt">Newbie Guide</span>
+							<b class="mask"></b>
+						</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- list-guides-sider end -->
+            <!-- card-box-sider begin -->
+            <div class="card-box card-box-sider">
+                <div class="c1">                                                 <img src="http://ue.2pcdn.com/a/hearthstone/index/2013/images/4.png" alt="" class="pic-hero" />
+                    <div class="info-box">
+                        <div class="info"><span class="tit">Class:</span> Paladin</div>
+                        <div class="info"><span class="tit">Hero Power:</span> Reinforce</div>
+                        <div class="info"><span class="tit">Ability: </span>  Summon a 1/1 Silver Hand Recruit</div>
+                    </div>
+                </div>
+                <div class="c2">
+                    <a href="#" target="_blank" class="link">Low Mana Cost Cards</a>
+                    <a href="#" target="_blank" class="link">Low Mana Cost Cards</a>
+                </div>
+            </div>
+            <!-- card-box-sider end -->
+        </div>
+    </div>
+    <!-- Recent Guides end -->
+    <!-- Deck Building Tools begin -->
+    <div class="comm-mod mod-tool">
+        <div class="mod-hd">
+            <h2 class="tit">Deck Building Tools</h2>
+        </div>
+        <div class="mod-bd">
+            <a href="#" target="_blank" class="comm-btn2"><i class="ico2 ico-arrow"></i>Deck tool link one</a>
+            <a href="#" target="_blank" class="comm-btn2"><i class="ico2 ico-arrow"></i>Deck tool link one</a>
+        </div>
+    </div>
+    <!-- Deck Building Tools end -->
+</div>
