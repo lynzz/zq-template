@@ -1,0 +1,24 @@
+{
+    "name": "zq-name",
+    "version": "0.1.0",
+    "engines": {
+        "node": ">=0.6.0"
+    },
+    "scripts": {
+        "build": "grunt build",
+        "test": "grunt qunit"
+    },
+    "dependencies": {
+        "grunt": "0.4.x",
+        "grunt-contrib-requirejs": "0.4.x",
+        "grunt-contrib-jshint": "0.1.x",
+        "grunt-contrib-qunit": "0.1.x"
+    },
+    "amd": {},
+    "volo": {
+        "baseUrl": "www/js/lib",
+        "dependencies": {
+            "jquery": "github:jquery/jquery/1.7.2"
+        }
+    }
+}
