@@ -1,5 +1,5 @@
 // 专区相关配置
-window.HERATSTONE_CONFIG = {
+window.ZQ_CONFIG = {
     'TAGS': {
         "Hearthstone Druid Deck Building": "Druid",
         "Hearthstone Hunter Deck Building": "Hunter",
