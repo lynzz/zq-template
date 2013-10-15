@@ -1,5 +1,6 @@
-define(['jquery', 'config'],function($, config) {
+define(['jquery'],function($) {
     var util = {};
+    var doc = document;
     util.queryToJson = function (str, sep, eq) {
         var decode = decodeURIComponent,
             hasOwnProperty = Object.prototype.hasOwnProperty,
@@ -52,13 +53,6 @@ define(['jquery', 'config'],function($, config) {
 
         $.each(a, function() {
             var value = this.value;
-            if (this.name === 'startTime') {
-                var startTime = moment(value).valueOf();
-                this.value = typeof startTime === 'number'?startTime:'';
-            } else if (this.name === 'endTime') {
-                var endTime = moment(value).add('days', 1).valueOf() - 1000;
-                this.value = typeof endTime === 'number'?endTime:'';
-            }
 
             this.value = value === 'null'?null:this.value;
 
@@ -133,10 +127,12 @@ define(['jquery', 'config'],function($, config) {
         }
     };
 
-    util.$cfg = function(key) {
-        return config[key]
-            ? (window.ctx + '/' + config[key])
-            : console.warn('ERR on read cfg ' + key);
+    util.loadCSS = function(url) {
+        var link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.href = url;
+        document.getElementsByTagName("head")[0].appendChild(link);
     };
 
     util.getCMSData = function(data, callback) {
@@ -164,10 +160,10 @@ define(['jquery', 'config'],function($, config) {
             input;
 
         //全局异常处理(login|error)
-        if ( json.result == 'login' ) {
+        /*if ( json.result == 'login' ) {
             //登录页跳转
-            window.location.href = $cfg('page_login');
-        }
+            window.location.href = util.$cfg('page_login');
+        }*/
         if ( json.result == 'error' ) {
             //异常提示
             console.error(json.messages);
@@ -189,7 +185,7 @@ define(['jquery', 'config'],function($, config) {
                 error = callback['error'] ||
                     function(msg){
                         console.warn(msg);
-                        $.error(msg).modal();
+                        //$.error(msg).modal();
                     };
 
             (json.result == 'success')
@@ -215,7 +211,8 @@ define(['jquery', 'config'],function($, config) {
 
                 callback['input']
                     ? (callback['input'].call(json, msg))
-                    : ($.message(msg).modal());
+                    //: ($.message(msg).modal());
+                    : console.log(msg);
             }
         }
     };
@@ -258,6 +255,11 @@ define(['jquery', 'config'],function($, config) {
             var value = obj[key];
             return ( value !== undefined) ? ''+value :'';
         });
-    }
+    };
+    // http://docs.jquery.com/Plugins/Validation/Methods/email
+    util.email = function(value) {
+        // contributed by Scott Gonzalez: http://projects.scottsplayground.com/email_address_validation/
+        return /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))$/i.test(value);
+    };
     return util;
 });
