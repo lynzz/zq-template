@@ -1,5 +1,4 @@
 define(["jquery", "app/base/util"], function($, util) {
-    var $cfg = util.$cfg;
     var app = {
         init: function() {
             this.cacheElements();
@@ -7,10 +6,10 @@ define(["jquery", "app/base/util"], function($, util) {
             this.bindEvents();
         },
         cacheElements: function() {
-
+            this.$content = $('#js-content');
         },
         render: function() {
-
+            this.$content.html('this is a web template with requirejs')
         },
 
 
