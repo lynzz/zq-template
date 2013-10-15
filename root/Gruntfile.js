@@ -9,9 +9,26 @@ module.exports = function(grunt) {
                     appDir: 'www',
                     baseUrl: 'js/lib',
                     paths: {
-                        app: '../app'
+                        app: '../app',
+                        jquery: 'http://ue.2pcdn.com/a/lib/v1/js/jquery',
+                        mustache: 'http://ue.2pcdn.com/a/lib/v2/js/mustache',
+                        'jquery.tabs': 'http://ue.2pcdn.com/a/lib/v2/js/jquery.tabs',
+                        'scrollable': 'http://ue.2pcdn.com/a/lib/v1/js/scrollable'
                     },
-
+                    shim: {
+                        'jquery': {
+                            exports: 'jQuery'
+                        },
+                        'jquery.tabs': {
+                            deps: ['jquery'],
+                            exports: '$.fn.tabs'
+                        },
+                        'scrollable': {
+                            deps: ['jquery'],
+                            exports: '$.fn.scrollable'
+                        }
+                    },
+                    fileExclusionRegExp: /^web-server\.js/,
                     dir: 'www-built',
                     modules: [
                         //First set up the common build layer.
@@ -68,10 +85,6 @@ module.exports = function(grunt) {
                 }
             },
             all: ['www/js/app/*.js', 'www/js/common.js', 'www/js/page-example.js']
-        },
-
-        qunit: {
-            all: ['tests/index.html']
         }
     });
 
@@ -80,8 +93,7 @@ module.exports = function(grunt) {
     // if you use this example standalone
     grunt.loadNpmTasks('grunt-contrib-requirejs');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-qunit');
 
-    grunt.registerTask('default', ['jshint', 'qunit']);
+    grunt.registerTask('default', ['jshint']);
     grunt.registerTask('build', 'requirejs');
 };
