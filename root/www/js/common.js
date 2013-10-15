@@ -10,12 +10,12 @@ if (!(window.console && console.log)) {
     }());
 }
 window.GLOBAL = {
-    //jsUrl: 'http://zt.2p.com/js/',
-    jsUrl: 'http://ue.2pcdn.com/a/www/feature/best/2013/js/',
+    jsUrl: 'http://localhost:8091/js/',
+    //jsUrl: 'http://ue.2pcdn.com/a/www/feature/best/2013/js/',
     apiUrl: 'http://127.0.0.1:8092/feature/bestof2013/'
 }
 requirejs.config({
-    baseUrl: GLOBAL.jsUrl + 'js/lib',
+    baseUrl: GLOBAL.jsUrl + 'lib',
     paths: {
         app: '../app',
         jquery: 'http://ue.2pcdn.com/a/lib/v1/js/jquery',
