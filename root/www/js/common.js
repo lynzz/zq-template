@@ -9,17 +9,18 @@ if (!(window.console && console.log)) {
         }
     }());
 }
-window.ctx = 'http://2p.com';
-var BASE_URL = 'http://zt.2p.com/';
-//var BASE_URL = 'http://ue.2pcdn.com/a/hearthstone/index/2013/';
+window.GLOBAL = {
+    //jsUrl: 'http://zt.2p.com/js/',
+    jsUrl: 'http://ue.2pcdn.com/a/www/feature/best/2013/js/',
+    apiUrl: 'http://127.0.0.1:8092/feature/bestof2013/'
+}
 requirejs.config({
-    baseUrl: BASE_URL + 'js/lib',
+    baseUrl: GLOBAL.jsUrl + 'js/lib',
     paths: {
         app: '../app',
         jquery: 'http://ue.2pcdn.com/a/lib/v1/js/jquery',
-        //'jq.tabs': 'http://ue.2pcdn.com/a/lib/v1/js/jq.tabs',
-        config: 'http://ue.2pcdn.com/a/www/index/2012/js/a/config',
-        moment: 'http://ue.2pcdn.com/a/lib/v2/js/moment',
+        mustache: 'http://ue.2pcdn.com/a/lib/v2/js/mustache',
+        'jquery.tabs': 'http://ue.2pcdn.com/a/lib/v2/js/jquery.tabs',
         'scrollable': 'http://ue.2pcdn.com/a/lib/v1/js/scrollable'
     },
     shim: {
