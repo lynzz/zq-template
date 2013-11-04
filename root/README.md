@@ -1,6 +1,6 @@
 **说明**
 
-	配置文件 js/config.js
+	专区配置文件 js/config.js
 
 **本地环境运行**
 
